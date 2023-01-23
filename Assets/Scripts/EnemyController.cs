@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        Vector3 target = player.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+        Vector3 target = player.position + new Vector3(Random.Range(-4f, 4f), Random.Range(-4f, 4f), 0f);
         transform.position = Vector3.MoveTowards(transform.position, target, movementSpeed * Time.deltaTime);
 
         attackTimer += Time.deltaTime;
